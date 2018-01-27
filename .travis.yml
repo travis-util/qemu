@@ -1,5 +1,5 @@
 ---
-# language: 
+language: python
 env:
 # - MATE=1.19 ATRIL=atril-1.19.0
 addons:
@@ -11,19 +11,15 @@ addons:
     - qemu
 
 install:
+- pip install pexpect
 - qemu-system-i386 --version
 - aria2c https://archive.openwrt.org/snapshots/trunk/realview/generic/openwrt-realview-vmlinux-initramfs.elf
-- echo '\n'
-- echo "\n"
-- empty -L log -f qemu-system-arm -M realview-eb-mpcore -kernel openwrt-realview-vmlinux-initramfs.elf -nographic
+# - empty -L log -f qemu-system-arm -M realview-eb-mpcore -kernel openwrt-realview-vmlinux-initramfs.elf -nographic
 #^ Strange: -L log seems to need to be there.
-- empty -l
-- empty -v -w "Please press Enter to activate this console." "\n"
-- empty -l
-- empty -w "root@(none):/#" "uname -a"
-- empty -w "root@(none):/#" "halt" # poweroff
-- empty -l
-- cat log
+# - empty -v -w "Please press Enter to activate this console." "\n"
+# - empty -w "root@(none):/#" "uname -a"
+# - empty -w "root@(none):/#" "halt" # poweroff
+- python3 openwrt.py
 
 script:
 - qemu-system-i386 --version
