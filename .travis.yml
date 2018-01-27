@@ -26,6 +26,7 @@ install:
 - ls -l
 - du -sch *
 - bsdtar -C finnix -xf finnix-111.iso
+- ls finnix/boot/x86
 - python finnix.py
 
 script:
