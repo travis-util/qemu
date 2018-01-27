@@ -9,4 +9,4 @@ child.logfile = sys.stdout
 # child.sendline('dpkg update')
 # child.sendline('halt')
 # child.expect(pexpect.EOF)
-print child.before;
+# print child.before;
