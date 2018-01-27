@@ -28,3 +28,4 @@ install:
 
 script:
 - qemu-system-i386 --version
+- qemu-system-x86_64 -cdrom finnix-111.iso -nographic
