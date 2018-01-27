@@ -21,7 +21,7 @@ install:
 # - empty -w "root@(none):/#" "halt" # poweroff
 - python openwrt.py
 - aria2c --seed-time=0 --bt-enable-lpd=true https://www.finnix.org/releases/111/finnix-111.iso.torrent
-- aria2c --bt-enable-lpd=true https://www.finnix.org/releases/111/finnix-111.iso.torrent &
+# - aria2c --bt-enable-lpd=true https://www.finnix.org/releases/111/finnix-111.iso.torrent &
 - ls -l
 - du -sch *
 - python finnix.py
