@@ -11,5 +11,5 @@ child.sendline('opkg')
 child.expect('root')
 # child.sendline('opkg update') # Internet connection not working!
 # child.sendline('halt')
-child.expect(pexpect.EOF)
+# child.expect(pexpect.EOF)
 print child.before;
