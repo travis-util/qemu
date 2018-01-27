@@ -7,7 +7,7 @@ addons:
     sources:
     packages:
     - aria2
-    # - empty-expect
+    - empty-expect
     - qemu
 
 install:
