@@ -9,7 +9,7 @@ child.sendline('uname -a')
 child.expect('root')
 child.sendline('opkg')
 child.expect('root')
-child.sendline('opkg update')
+# child.sendline('opkg update')
 # child.sendline('halt')
 child.expect(pexpect.EOF)
 print child.before;
