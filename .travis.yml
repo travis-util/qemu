@@ -7,6 +7,7 @@ addons:
     sources:
     packages:
     - aria2
+    - bsdtar
     - empty-expect
     - qemu
 
@@ -24,6 +25,7 @@ install:
 - aria2c --seed-ratio=0.0 --bt-enable-lpd=true finnix-111.iso.torrent &
 - ls -l
 - du -sch *
+- bsdtar -C finnix -xf finnix-111.iso
 - python finnix.py
 
 script:
