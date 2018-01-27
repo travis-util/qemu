@@ -13,7 +13,10 @@ addons:
 install:
 - qemu-system-i386 --version
 - aria2c https://archive.openwrt.org/snapshots/trunk/realview/generic/openwrt-realview-vmlinux-initramfs.elf
-- qemu-system-arm -M realview-eb-mpcore -kernel openwrt-realview-vmlinux-initramfs.elf -nographic
+- empty -f qemu-system-arm -M realview-eb-mpcore -kernel openwrt-realview-vmlinux-initramfs.elf -nographic
+- echo '\n'
+- echo "\n"
+- empty -w "Please press Enter to activate this console." "\n"
 
 script:
 - qemu-system-i386 --version
