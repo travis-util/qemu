@@ -25,6 +25,7 @@ install:
 - aria2c --seed-ratio=0.0 --bt-enable-lpd=true finnix-111.iso.torrent &
 - ls -l
 - du -sch *
+- install --directory finnix
 - bsdtar -C finnix -xf finnix-111.iso
 - ls finnix/boot/x86
 - python finnix.py
