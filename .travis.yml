@@ -17,6 +17,7 @@ install:
 - echo "\n"
 - empty -f qemu-system-arm -M realview-eb-mpcore -kernel openwrt-realview-vmlinux-initramfs.elf -nographic
 - empty -l
+- cat /tmp/empty.*.out
 - empty -w 'Please press Enter to activate this console.' '\n'
 - empty -l
 - empty -w "root@(none):/#" "uname -a"
