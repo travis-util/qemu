@@ -1,5 +1,5 @@
 import pexpect, sys
-child = pexpect.spawn('qemu-system-x86_64 -cdrom finnix-111.iso')
+child = pexpect.spawn('qemu-system-x86_64 -cdrom finnix-111.iso -nographic')
 child.logfile = sys.stdout
 # child.expect('Please press Enter to activate this console.')
 # child.sendline('')
