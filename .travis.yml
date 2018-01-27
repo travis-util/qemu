@@ -1,0 +1,17 @@
+---
+# language: 
+env:
+# - MATE=1.19 ATRIL=atril-1.19.0
+addons:
+  apt:
+    sources:
+    packages:
+    # - aria2
+    # - empty-expect
+    - qemu
+
+install:
+- qemu-system-i386 --version
+
+script:
+- qemu-system-i386 --version
