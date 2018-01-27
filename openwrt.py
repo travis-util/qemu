@@ -3,9 +3,10 @@ child = pexpect.spawn('qemu-system-arm -M realview-eb-mpcore -kernel openwrt-rea
 child.logfile = sys.stdout
 child.expect('Please press Enter to activate this console.')
 child.sendline('')
-child.expect('root@(none):/#')
+# child.expect('root@(none):/#')
+child.expect('root')
 child.sendline('uname -a')
-child.expect('root@(none):/#')
+child.expect('root')
 child.sendline('halt')
 child.expect(pexpect.EOF)
 print child.before;
