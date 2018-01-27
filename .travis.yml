@@ -6,7 +6,7 @@ addons:
   apt:
     sources:
     packages:
-    # - aria2
+    - aria2
     # - empty-expect
     - qemu
 
