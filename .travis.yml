@@ -14,6 +14,7 @@ addons:
 install:
 - pip install pexpect
 - qemu-system-i386 --version
+- qemu-system-x86_64 --version
 - aria2c https://archive.openwrt.org/snapshots/trunk/realview/generic/openwrt-realview-vmlinux-initramfs.elf
 # - empty -L log -f qemu-system-arm -M realview-eb-mpcore -kernel openwrt-realview-vmlinux-initramfs.elf -nographic
 #^ Strange: -L log seems to need to be there.
@@ -31,5 +32,5 @@ install:
 - python finnix.py
 
 script:
-- qemu-system-i386 --version
-- qemu-system-x86_64 -cdrom finnix-111.iso -nographic
+- qemu-system-x86_64 -kernel finnix/boot/x86/linux64 -append 'initrd=boot/x86/initrd.xz console=ttyS0' -cdrom finnix-111.iso -nographic
+# findiso=
