@@ -14,7 +14,10 @@ addons:
 install:
 - pip install pexpect
 - qemu-system-i386 --version
+- qemu-system-i386 -machine help
 - qemu-system-x86_64 --version
+- qemu-system-x86_64 -machine help
+- qemu-system-arm -machine help
 - aria2c https://archive.openwrt.org/snapshots/trunk/realview/generic/openwrt-realview-vmlinux-initramfs.elf
 # - empty -L log -f qemu-system-arm -M realview-eb-mpcore -kernel openwrt-realview-vmlinux-initramfs.elf -nographic
 #^ Strange: -L log seems to need to be there.
