@@ -77,3 +77,4 @@ APPEND vga=off console=ttyS0,115200n8 initrd=boot/x86/initrd.xz nomodeset quiet 
 
 ### Super Grub2 Disk
 * https://www.supergrubdisk.org/super-grub2-disk/
+* ```$ qemu-system-i386 -drive file=super_grub2_disk_hybrid_2.02s9.iso -drive file=finnix-111.iso```
