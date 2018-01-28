@@ -74,3 +74,6 @@ DEFAULT text
 APPEND vga=off console=ttyS0,115200n8 initrd=boot/x86/initrd.xz nomodeset quiet --- console=ttyS0,115200n8
 ```
 * $ xorriso -as mkisofs -r -J -joliet-long -l -cache-inodes -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 -A "Finnix111" -b isolinux.bin -c boot/x86/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o finnix-111-serial-install.iso finnix
+
+### Super Grub2 Disk
+* https://www.supergrubdisk.org/super-grub2-disk/
