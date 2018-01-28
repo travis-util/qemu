@@ -23,8 +23,24 @@ References
 ### Live image adaptation
 
 ## Remastering a live CD with Chorizzo
+* [*LiveCDCustomizationFromScratch*](https://help.ubuntu.com/community/LiveCDCustomizationFromScratch)
+* [*What is the difference between GRUB and SYSLINUX?*](https://askubuntu.com/questions/651902/what-is-the-difference-between-grub-and-syslinux)
+
 ### Editing Syslinux configuration
+* https://en.wikipedia.org/wiki/SYSLINUX
 * [*SYSLINUX*](http://www.syslinux.org/wiki/index.php?title=SYSLINUX)
+* [*ISOLINUX*](http://www.syslinux.org/wiki/index.php?title=ISOLINUX)
+
+### Kernel configuration
+* http://man7.org/linux/man-pages/man7/bootparam.7.html
+* [*Kernel parameters*](https://wiki.archlinux.org/index.php/kernel_parameters)
+* https://www.kernel.org/doc/Documentation/admin-guide/kernel-parameters.txt
+
+## Findiso
+Findiso is a kernel option proposed by GRML
+* [*Working on findiso for Debian Live*](https://www.supergrubdisk.org/2012/04/07/working-on-findiso-for-debian-live/)
+* cf. grml-cheatcodes
+* [*Debian Bug report logs - #656135 support findiso functionality*](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=656135)
 
 ### Files needed
 #### Packages
@@ -41,6 +57,7 @@ References
 
 ## Building a live CD image from scratch
 * [*Building an hybrid Debian Live ISO with xorriso*](https://www.opengeeks.me/2015/04/build-your-hybrid-debian-distro-with-xorriso/)
+* [*How to create a bootable system with a squashfs root*](https://askubuntu.com/questions/95392/how-to-create-a-bootable-system-with-a-squashfs-root)
 
 ## Examples of live CD
 ### Debian Netinstall
@@ -75,6 +92,8 @@ APPEND vga=off console=ttyS0,115200n8 initrd=boot/x86/initrd.xz nomodeset quiet 
 ```
 * $ xorriso -as mkisofs -r -J -joliet-long -l -cache-inodes -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 -A "Finnix111" -b isolinux.bin -c boot/x86/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o finnix-111-serial-install.iso finnix
 
-### Super Grub2 Disk
+### Super Grub2 Disk or using Grub
 * https://www.supergrubdisk.org/super-grub2-disk/
 * ```$ qemu-system-i386 -drive file=super_grub2_disk_hybrid_2.02s9.iso -drive file=finnix-111.iso```
+
+* [*DebianLive MultibootISO*](https://wiki.debian.org/DebianLive/MultibootISO)
