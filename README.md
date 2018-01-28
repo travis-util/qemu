@@ -54,3 +54,22 @@ References
 
 ### GRML
 * http://git.grml.org/?p=grml-live.git;a=blob_plain;f=templates/GRML/grml-cheatcodes.txt;hb=HEAD
+
+### Finnix
+* Edit /isolinux.cfg
+serial 0 115200
+console 0
+...
+DEFAULT text
+# DISPLAY boot/x86/boot.msg
+# PROMPT 0
+# TIMEOUT 600
+# ONTIMEOUT hd0
+...
+# MENU BACKGROUND boot/x86/splash.png
+...
+# KERNEL boot/x86/vesamenu.c32
+...
+APPEND vga=off console=ttyS0,115200n8 initrd=boot/x86/initrd.xz nomodeset quiet --- console=ttyS0,115200n8
+
+* $ xorriso -as mkisofs -r -J -joliet-long -l -cache-inodes -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 -A "Finnix111" -b isolinux.bin -c boot/x86/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o finnix-111-serial-install.iso finnix
