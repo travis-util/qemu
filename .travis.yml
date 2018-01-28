@@ -31,6 +31,9 @@ install:
 - ls finnix/boot/x86
 - ls finnix/finnix/arch/x86/root.img
 - python finnix.py
+- ls -l finnix/finnix/arch/x86/root.img
+- chmod u+w finnix/finnix/arch/x86/root.img
+- ls -l finnix/finnix/arch/x86/root.img
 
 script:
 - qemu-system-x86_64 -kernel finnix/boot/x86/linux64 -append 'initrd=boot/x86/initrd.xz console=ttyS0' -hda finnix/finnix/arch/x86/root.img -cdrom finnix-111.iso -nographic
