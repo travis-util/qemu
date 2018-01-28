@@ -7,6 +7,8 @@ child.sendline('')
 child.expect('root')
 child.sendline('uname -a')
 child.expect('root')
+child.sendline('cat /proc/cmdline')
+child.expect('root')
 child.sendline('opkg')
 child.expect('root')
 # child.sendline('opkg update') # Internet connection not working!
