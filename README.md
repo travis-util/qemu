@@ -13,6 +13,8 @@ One feature one may like is running in a console shell.
 * [*QEMU/Options*](https://wiki.gentoo.org/wiki/QEMU/Options)
 ##### -drive (readonly)
 
+## TODO
+* Editing a live CD image with bsdtar (see below), using update or appends (create seems as complicated as burning from scratch). This needs to extract a configuration file, to simulate a null update.
 
 ## Distributions running in serial console out of the box
 
@@ -87,6 +89,16 @@ Findiso is a kernel option proposed by GRML
 
 ## Editing a live CD image with bsdtar
 * Would it work?
+* tar --create --file new.iso foo1 @old.iso -C/tmp foo2
+* tar --create --file new.iso @old.iso
+* tar --update --file image.iso foo1
+* tar --append --file image.iso foo1
+* man bsdtar
+* https://github.com/libarchive/libarchive/wiki/ManPageBsdtar1
+* tar creates and manipulates streaming archive files. This implementation can extract from tar, pax, cpio, zip, jar, ar, xar, rpm, 7-zip, and ISO 9660 cdrom images and can create tar, pax, cpio, ar, zip, 7-zip, and shar archives.
+* https://github.com/libarchive/libarchive/wiki/FormatISO9660
+* bsdtar 3.1.2 - libarchive 3.1.2 (bsdtar --help) supports to write on ISO9660
+* bsdtar --create --format iso9660 --file new.iso @/media/jean-bernard/data/boot_iso/finnix-111.iso # result is not bootable with 3.1.2
 
 ## Building a live CD image from scratch
 * [*Building an hybrid Debian Live ISO with xorriso*](https://www.opengeeks.me/2015/04/build-your-hybrid-debian-distro-with-xorriso/)
