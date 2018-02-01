@@ -98,7 +98,7 @@ Findiso is a kernel option proposed by GRML
 * tar creates and manipulates streaming archive files. This implementation can extract from tar, pax, cpio, zip, jar, ar, xar, rpm, 7-zip, and ISO 9660 cdrom images and can create tar, pax, cpio, ar, zip, 7-zip, and shar archives.
 * https://github.com/libarchive/libarchive/wiki/FormatISO9660
 * bsdtar 3.1.2 - libarchive 3.1.2 (bsdtar --help) supports to write on ISO9660
-* bsdtar --create --format iso9660 --file new.iso @/media/jean-bernard/data/boot_iso/finnix-111.iso # result is not bootable with 3.1.2
+* bsdtar --create --format iso9660 --file new.iso @finnix-111.iso # result is not bootable with 3.1.2
 
 ## Building a live CD image from scratch
 * [*Building an hybrid Debian Live ISO with xorriso*](https://www.opengeeks.me/2015/04/build-your-hybrid-debian-distro-with-xorriso/)
