@@ -99,6 +99,11 @@ Findiso is a kernel option proposed by GRML
 * https://github.com/libarchive/libarchive/wiki/FormatISO9660
 * bsdtar 3.1.2 - libarchive 3.1.2 (bsdtar --help) supports to write on ISO9660
 * bsdtar --create --format iso9660 --file new.iso @finnix-111.iso # result is not bootable with 3.1.2
+* bsdtar --to-stdout --file finnix-111.iso --extract isolinux.cfg
+* --append and --update seems to transform the iso file into an empty POSIX tar archive before to make the requested operation.
+* bsdtar -vvw --format iso9660 --file new2.iso --append isolinux.cfg
+* bsdtar: Format iso9660 is incompatible with the archive new2.iso.
+* bsdtar: Can't read archive f.iso: Unrecognized archive format: Invalid or incomplete multibyte or wide character
 
 ## Building a live CD image from scratch
 * [*Building an hybrid Debian Live ISO with xorriso*](https://www.opengeeks.me/2015/04/build-your-hybrid-debian-distro-with-xorriso/)
