@@ -42,6 +42,7 @@ qemu -display curses # but
 
 ### Live image adaptation
 
+## Appending to a live CD with Chorizzo (but is it possible without actually burning to a physical disk?)
 ## Remastering a live CD with Chorizzo
 * [*LiveCDCustomizationFromScratch*](https://help.ubuntu.com/community/LiveCDCustomizationFromScratch)
 * [*What is the difference between GRUB and SYSLINUX?*](https://askubuntu.com/questions/651902/what-is-the-difference-between-grub-and-syslinux)
