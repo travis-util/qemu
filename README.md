@@ -1,6 +1,8 @@
 # qemu
 Using Qemu emulator
 
+[![Build Status](https://travis-ci.org/travis-util/qemu.svg?branch=master)](https://travis-ci.org/travis-util/qemu)
+
 One feature one may like is running in a console shell.
 
 ### Qemu
@@ -33,6 +35,10 @@ References
 ## How to use a live CD with the serial console?
 ### Kernel parameters
 * console=ttyS0
+
+### ANSI escape code
+* [ANSI escape code](https://en.wikipedia.org/wiki/ANSI_escape_code)
+
 ### Ncurse
 qemu -display curses # but
 * [*What are the ascii values of up down left right?*](https://stackoverflow.com/questions/2876275/what-are-the-ascii-values-of-up-down-left-right)
