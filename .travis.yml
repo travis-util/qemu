@@ -39,6 +39,9 @@ install:
 - ls -l finnix/finnix/arch/x86/root.img
 
 script:
+- true
 # - qemu-system-x86_64 -kernel finnix/boot/x86/linux64 -append 'initrd=boot/x86/initrd.xz console=ttyS0' -hda finnix/finnix/arch/x86/root.img -cdrom finnix-111.iso -nographic
-- qemu-system-x86_64 -kernel finnix/boot/x86/linux64 -append 'initrd=boot/x86/initrd.xz console=ttyS0' -cdrom finnix-111.iso -nographic
+# - qemu-system-x86_64 -kernel finnix/boot/x86/linux64 -append 'initrd=boot/x86/initrd.xz console=ttyS0' -cdrom finnix-111.iso -nographic
 # findiso=
+# Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0)
+# - qemu-system-x86_64 -cdrom /media/jean-bernard/data/boot_iso/finnix-111.iso -nographic
