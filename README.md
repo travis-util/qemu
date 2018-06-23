@@ -14,6 +14,13 @@ One feature one may like is running in a console shell.
 #### Options
 * [*QEMU/Options*](https://wiki.gentoo.org/wiki/QEMU/Options)
 ##### -drive (readonly)
+##### egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+* true in sudo: false mode
+* false in sudo: true mode
+* -machine accel=kvm
+* -cpu help
+* -accel kvm
+* 2018-06
 
 ## TODO
 * Editing a live CD image with bsdtar (see below), using update or appends (create seems as complicated as burning from scratch). This needs to extract a configuration file, to simulate a null update.
