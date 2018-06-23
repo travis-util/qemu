@@ -12,6 +12,7 @@ addons:
     - qemu
 
 install:
+- if egrep '^flags.*(vmx|svm)' /proc/cpuinfo ; then modprobe kvm-intel ; fi
 - pip install pexpect
 - qemu-system-i386 --version
 - qemu-system-i386 -machine help
