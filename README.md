@@ -5,6 +5,12 @@ Using Qemu emulator
 
 One feature one may like is running in a console shell.
 
+### TODO
+* Try Alpine Linux, it is more Qemu friendly
+
+### Similar projects
+* https://gitlab.com/qemu-demo/alpine-virt
+
 ### Qemu
 * [*QEMU*](https://wiki.archlinux.org/index.php/QEMU#Creating_a_hard_disk_image)
 * [*Transfering root filesystem data into QEMU disk images*](http://nairobi-embedded.org/transfering_buildroot_fs_data_into_qemu_disk_images.html)
