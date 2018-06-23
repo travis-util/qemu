@@ -1,6 +1,6 @@
 ---
 language: python
-sudo: enabled
+# sudo: enabled
 env:
 # - MATE=1.19 ATRIL=atril-1.19.0
 addons:
@@ -13,7 +13,8 @@ addons:
     - qemu
 
 install:
-- if egrep '^flags.*(vmx|svm)' /proc/cpuinfo ; then sudo modprobe kvm-intel ; fi
+# - if egrep '^flags.*(vmx|svm)' /proc/cpuinfo ; then sudo modprobe kvm-intel ; fi
+- egrep '^flags.*(vmx|svm)' /proc/cpuinfo --max-count=1 --only-matching
 - pip install pexpect
 - qemu-system-i386 --version
 - qemu-system-i386 -machine help
@@ -47,3 +48,7 @@ script:
 # findiso=
 # Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0)
 # - qemu-system-x86_64 -cdrom /media/jean-bernard/data/boot_iso/finnix-111.iso -nographic
+
+# To try:
+#   * -machine accel=kvm
+#   * A distribution more qemu friendly like Alpine Linux
