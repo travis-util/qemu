@@ -7,6 +7,7 @@ One feature one may like is running in a console shell.
 
 ### TODO
 * Try Alpine Linux, it is more Qemu friendly
+* [wiki.ubuntu.com](https://wiki.ubuntu.com/) > [Base (Ubuntu Base)](https://wiki.ubuntu.com/Base)
 
 ### Similar projects
 * https://gitlab.com/qemu-demo/alpine-virt
