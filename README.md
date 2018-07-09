@@ -11,7 +11,8 @@ One feature one may like is running in a console shell.
 * [wiki.ubuntu.com](https://wiki.ubuntu.com/) > [Base (Ubuntu Base)](https://wiki.ubuntu.com/Base)
 
 ### Similar projects
-* https://gitlab.com/qemu-demo/alpine-virt
+* [gitlab.com/qemu-demo/alpine-virt](https://gitlab.com/qemu-demo/alpine-virt)@gitlab
+* [hub-docker-com-demo/qemu-user-static](https://gitlab.com/hub-docker-com-demo/qemu-user-static)@gitlab
 
 ### Qemu
 * [*QEMU*](https://wiki.archlinux.org/index.php/QEMU#Creating_a_hard_disk_image)
