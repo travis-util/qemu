@@ -10,7 +10,7 @@ One feature one may like is running in a console shell.
   * Put aria2c torrent download test in separate projet for trusty 14.04 LTS and xenial 16.04 LTS
     * https://askubuntu.com/questions/29872/torrent-client-for-the-command-line
     * https://gitlab.com/alpinelinux-packages-demo/aria2
-  * Move Finnix in separated project https://gitlab.com/hub-docker-com-demo/finnix
+  * Move Finnix in separated project https://gitlab.com/hub-docker-com-demo/finnix or gitlab.com/qemu-demo/alpine-virt
   * Debug Finnix part maybe sending arrow special char from python pexpect.
 * Try Alpine Linux, it is more Qemu friendly
   * [wiki.alpinelinux.org](https://wiki.alpinelinux.org/) > [*Install Alpine Linux in Qemu*](https://wiki.alpinelinux.org/wiki/Qemu)
@@ -24,6 +24,7 @@ One feature one may like is running in a console shell.
 
 ### Similar projects
 * [gitlab.com/qemu-demo/alpine-virt](https://gitlab.com/qemu-demo/alpine-virt)@gitlab
+* [gitlab.com/hub-docker-com-demo/finnix](https://gitlab.com/hub-docker-com-demo/finnix)
 * [hub-docker-com-demo/qemu-user-static](https://gitlab.com/hub-docker-com-demo/qemu-user-static)@gitlab
 
 ### Qemu
