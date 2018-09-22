@@ -32,7 +32,7 @@ install:
 # - qemu-system-arm -net nic,vlan=0 -net nic,vlan=1 -net user,vlan=1 -nographic -M virt -m 64 -kernel openwrt-armvirt-32-zImage-initramfs
 - python openwrt.py
 # - aria2c --seed-time=0 --bt-enable-lpd=true https://www.finnix.org/releases/111/finnix-111.iso.torrent
-- aria2c --follow-torrent=true|false https://www.finnix.org/releases/111/finnix-111.iso.torrent
+- aria2c --follow-torrent=false https://www.finnix.org/releases/111/finnix-111.iso.torrent
 - ls *.torrent
 - aria2c --seed-time=0 --bt-enable-lpd=true finnix-111.iso.torrent
 - aria2c --seed-ratio=0.0 --bt-enable-lpd=true finnix-111.iso.torrent &
