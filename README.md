@@ -10,6 +10,7 @@ One feature one may like is running in a console shell.
   * Creating two NICs for OpenWrt on ARM
 
 ### TODO
+* Update this project to look more like [qemu-demo/alpine-virt](https://gitlab.com/qemu-demo/alpine-virt)@gitlab
 * Finnix
   * Put aria2c torrent download test in separate projet for trusty 14.04 LTS and xenial 16.04 LTS
     * https://askubuntu.com/questions/29872/torrent-client-for-the-command-line
