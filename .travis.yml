@@ -1,6 +1,12 @@
+# TODO
+# Put aria2c torrent download test in separate projet for trusty 14.04 LTS and xenial 16.04 LTS
+# Debug Finnix part maybe sending arrow special char from python pexpect.
+# Compare with other Openwrt projects and update what needs to.
+# Network configuration
+
 ---
 language: python
-dist: xenial
+dist: xenial # (16.04 LTS) was needed to replace trusty (14.04 LTS) which TLS was no more working with torrent download with aria2c
 # sudo: enabled
 env:
 # - MATE=1.19 ATRIL=atril-1.19.0
@@ -50,7 +56,8 @@ install:
 - ls -l finnix/finnix/arch/x86/root.img
 
 script:
-- true
+- false
+
 # - qemu-system-x86_64 -kernel finnix/boot/x86/linux64 -append 'initrd=boot/x86/initrd.xz console=ttyS0' -hda finnix/finnix/arch/x86/root.img -cdrom finnix-111.iso -nographic
 # - qemu-system-x86_64 -kernel finnix/boot/x86/linux64 -append 'initrd=boot/x86/initrd.xz console=ttyS0' -cdrom finnix-111.iso -nographic
 # findiso=
