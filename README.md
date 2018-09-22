@@ -6,6 +6,12 @@ Using Qemu emulator
 One feature one may like is running in a console shell.
 
 ### TODO
+* Finnix
+  * Put aria2c torrent download test in separate projet for trusty 14.04 LTS and xenial 16.04 LTS
+    * https://askubuntu.com/questions/29872/torrent-client-for-the-command-line
+    * https://gitlab.com/alpinelinux-packages-demo/aria2
+  * Move Finnix in separated project https://gitlab.com/hub-docker-com-demo/finnix
+  * Debug Finnix part maybe sending arrow special char from python pexpect.
 * Try Alpine Linux, it is more Qemu friendly
   * [wiki.alpinelinux.org](https://wiki.alpinelinux.org/) > [*Install Alpine Linux in Qemu*](https://wiki.alpinelinux.org/wiki/Qemu)
   * Compare with other Alpine projects (see "Similar projects" below) and update what needs to.
@@ -14,12 +20,6 @@ One feature one may like is running in a console shell.
   * Compare with other Alpine projects (see "Similar projects" below) and update what needs to.
   * Network configuration
   * OpenWrt prefers two network cards as it is intended for routers.
-* Finnix
-  * Put aria2c torrent download test in separate projet for trusty 14.04 LTS and xenial 16.04 LTS
-    * https://askubuntu.com/questions/29872/torrent-client-for-the-command-line
-    * https://gitlab.com/alpinelinux-packages-demo/aria2
-  * Move Finnix in separated project
-  * Debug Finnix part maybe sending arrow special char from python pexpect.
 * [wiki.ubuntu.com](https://wiki.ubuntu.com/) > [Base (Ubuntu Base)](https://wiki.ubuntu.com/Base)
 
 ### Similar projects
