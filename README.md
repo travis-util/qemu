@@ -8,6 +8,16 @@ One feature one may like is running in a console shell.
 ### TODO
 * Try Alpine Linux, it is more Qemu friendly
   * [wiki.alpinelinux.org](https://wiki.alpinelinux.org/) > [*Install Alpine Linux in Qemu*](https://wiki.alpinelinux.org/wiki/Qemu)
+  * Compare with other Alpine projects (see "Similar projects" below) and update what needs to.
+  * Network configuration
+* OpenWrt
+  * Compare with other Alpine projects (see "Similar projects" below) and update what needs to.
+  * Network configuration
+  * OpenWrt prefers two network cards as it is intended for routers.
+* Finnix
+  * Put aria2c torrent download test in separate projet for trusty 14.04 LTS and xenial 16.04 LTS
+  * Move Finnix in separated project
+  * Debug Finnix part maybe sending arrow special char from python pexpect.
 * [wiki.ubuntu.com](https://wiki.ubuntu.com/) > [Base (Ubuntu Base)](https://wiki.ubuntu.com/Base)
 
 ### Similar projects
