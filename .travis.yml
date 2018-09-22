@@ -28,7 +28,7 @@ install:
 # - empty -v -w "Please press Enter to activate this console." "\n"
 # - empty -w "root@(none):/#" "uname -a"
 # - empty -w "root@(none):/#" "halt" # poweroff
-- qemu-system-arm -net nic,vlan=0 -net nic,vlan=1 -net user,vlan=1 -nographic -M virt -m 64 -kernel openwrt-armvirt-64-Image-initramfs
+- qemu-system-aarch64 -net nic,vlan=0 -net nic,vlan=1 -net user,vlan=1 -nographic -M virt -m 64 -kernel openwrt-armvirt-64-Image-initramfs
 - python openwrt.py
 - aria2c --seed-time=0 --bt-enable-lpd=true https://www.finnix.org/releases/111/finnix-111.iso.torrent
 - aria2c --seed-ratio=0.0 --bt-enable-lpd=true finnix-111.iso.torrent &
