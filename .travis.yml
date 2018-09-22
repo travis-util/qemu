@@ -1,5 +1,6 @@
 ---
 language: python
+dist: xenial
 # sudo: enabled
 env:
 # - MATE=1.19 ATRIL=atril-1.19.0
