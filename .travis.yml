@@ -56,7 +56,7 @@ install:
 - ls -l finnix/finnix/arch/x86/root.img
 
 script:
-- false
+- echo "Improve https://gitlab.com/qemu-demo/alpine-virt and then update this project!" && false
 
 # - qemu-system-x86_64 -kernel finnix/boot/x86/linux64 -append 'initrd=boot/x86/initrd.xz console=ttyS0' -hda finnix/finnix/arch/x86/root.img -cdrom finnix-111.iso -nographic
 # - qemu-system-x86_64 -kernel finnix/boot/x86/linux64 -append 'initrd=boot/x86/initrd.xz console=ttyS0' -cdrom finnix-111.iso -nographic
