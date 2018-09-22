@@ -5,12 +5,16 @@ Using Qemu emulator
 
 One feature one may like is running in a console shell.
 
+### Warning and error messages
+* [Warning: requested NIC (anonymous, model unspecified) was not created (not supported by this machine?)](https://google.com/search?q=Warning%3A+requested+NIC+%28anonymous%2C+model+unspecified%29+was+not+created+%28not+supported+by+this+machine%3F%29)
+  * Creating two NICs for OpenWrt on ARM
+
 ### TODO
 * Finnix
   * Put aria2c torrent download test in separate projet for trusty 14.04 LTS and xenial 16.04 LTS
     * https://askubuntu.com/questions/29872/torrent-client-for-the-command-line
     * https://gitlab.com/alpinelinux-packages-demo/aria2
-  * Move Finnix in separated project https://gitlab.com/hub-docker-com-demo/finnix or gitlab.com/qemu-demo/alpine-virt
+  * Move Finnix in separated project https://gitlab.com/hub-docker-com-demo/finnix or https://gitlab.com/qemu-demo/finnix
   * Debug Finnix part maybe sending arrow special char from python pexpect.
 * Try Alpine Linux, it is more Qemu friendly
   * [wiki.alpinelinux.org](https://wiki.alpinelinux.org/) > [*Install Alpine Linux in Qemu*](https://wiki.alpinelinux.org/wiki/Qemu)
@@ -23,9 +27,11 @@ One feature one may like is running in a console shell.
 * [wiki.ubuntu.com](https://wiki.ubuntu.com/) > [Base (Ubuntu Base)](https://wiki.ubuntu.com/Base)
 
 ### Similar projects
-* [gitlab.com/qemu-demo/alpine-virt](https://gitlab.com/qemu-demo/alpine-virt)@gitlab
-* [gitlab.com/hub-docker-com-demo/finnix](https://gitlab.com/hub-docker-com-demo/finnix)
-* [hub-docker-com-demo/qemu-user-static](https://gitlab.com/hub-docker-com-demo/qemu-user-static)@gitlab
+* [hub-docker-com-demo/alpine](https://gitlab.com/hub-docker-com-demo/alpine)@gitlab
+* [hub-docker-com-demo/finnix](https://gitlab.com/hub-docker-com-demo/finnix)@gitlab
+* [hub-docker-com-demo/openwrt](https://gitlab.com/hub-docker-com-demo/openwrt)@gitlab
+* [hub-docker-com-demo/qemu](https://gitlab.com/hub-docker-com-demo/qemu)@gitlab
+* [qemu-demo/alpine-virt](https://gitlab.com/qemu-demo/alpine-virt)@gitlab
 
 ### Qemu
 * [*QEMU*](https://wiki.archlinux.org/index.php/QEMU#Creating_a_hard_disk_image)
