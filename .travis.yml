@@ -21,7 +21,8 @@ install:
 - qemu-system-x86_64 --version
 - qemu-system-x86_64 -machine help
 - qemu-system-arm -machine help
-- aria2c https://archive.openwrt.org/snapshots/trunk/realview/generic/openwrt-realview-vmlinux-initramfs.elf
+# - aria2c https://archive.openwrt.org/snapshots/trunk/realview/generic/openwrt-realview-vmlinux-initramfs.elf
+- aria2c https://downloads.openwrt.org/snapshots/targets/armvirt/64/openwrt-armvirt-64-Image-initramfs
 # - empty -L log -f qemu-system-arm -M realview-eb-mpcore -kernel openwrt-realview-vmlinux-initramfs.elf -nographic
 #^ Strange: -L log seems to need to be there.
 # - empty -v -w "Please press Enter to activate this console." "\n"
