@@ -42,7 +42,7 @@ install:
 - wget https://www.finnix.org/releases/111/finnix-111.iso.torrent
 # - aria2c --follow-torrent=false https://www.finnix.org/releases/111/finnix-111.iso.torrent
 - ls *.torrent
-- aria2c --seed-time=0 --bt-enable-lpd=true finnix-111.iso.torrent
+- aria2c --seed-time=0 --bt-enable-lpd=true finnix-111.iso.torrent || aria2c --check-integrity finnix-111.iso.torrent
 - aria2c --seed-ratio=0.0 --bt-enable-lpd=true finnix-111.iso.torrent &
 - ls -l
 - du -sch *
