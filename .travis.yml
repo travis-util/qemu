@@ -6,6 +6,7 @@
 
 ---
 language: python
+python: 2.7
 dist: xenial # (16.04 LTS) was needed to replace trusty (14.04 LTS) which TLS was no more working with torrent download with aria2c
 # sudo: enabled
 env:
